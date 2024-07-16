@@ -1,0 +1,24 @@
+{
+  "name": "@jcesarmobile/permissionless-photo-picker",
+  "version": "0.0.1",
+  "description": "Cordova plugin for picking pictures from the gallery without requesting permissions",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcesarmobile/permissionless-photo-picker.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "photo",
+    "picker"
+  ],
+  "author": "jcesarmobile",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcesarmobile/permissionless-photo-picker/issues"
+  },
+  "homepage": "https://github.com/jcesarmobile/permissionless-photo-picker#readme"
+}

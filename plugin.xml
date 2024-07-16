@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="@jcesarmobile/permissionless-photo-picker"
+    version="0.0.1">
+    <name>Permissionless Photo Picker</name>
+    <description>Cordova Permissionless Photo Picker Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,photo,picker,plugin,permissionless</keywords>
+    <repo>https://github.com/jcesarmobile/permissionless-photo-picker</repo>
+    <issue>https://github.com/jcesarmobile/permissionless-photo-picker/issues</issue>
+
+
+   <js-module src="www/PermissionlessPhotoPicker.js" name="PermissionlessPhotoPicker">
+    <clobbers target="window.plugins.PermissionlessPhotoPicker" />
+  </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PermissionlessPhotoPicker">
+                <param name="onload" value="true"/>
+                <param name="android-package" value="com.jcesarmobile.permissionless.photopicker.PermissionlessPhotoPicker"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/PermissionlessPhotoPicker.java" target-dir="src/com/jcesarmobile/permissionless/photopicker" />
+
+        <preference name="ANDROIDX_CORE_VERSION" default="1.13.1"/>
+        <framework src="androidx.core:core:$ANDROIDX_CORE_VERSION" />
+
+      </platform>
+
+     <!-- ios -->
+     <platform name="ios">
+         <config-file target="config.xml" parent="/*">
+             <feature name="PermissionlessPhotoPicker">
+                 <param name="ios-package" value="PermissionlessPhotoPicker" />
+             </feature>
+         </config-file>
+         <source-file src="src/ios/PermissionlessPhotoPicker.m" />
+
+     </platform>
+</plugin>
