@@ -26,9 +26,6 @@
 
         <source-file src="src/android/PermissionlessPhotoPicker.java" target-dir="src/com/jcesarmobile/permissionless/photopicker" />
 
-        <preference name="ANDROIDX_CORE_VERSION" default="1.13.1"/>
-        <framework src="androidx.core:core:$ANDROIDX_CORE_VERSION" />
-
       </platform>
 
      <!-- ios -->
