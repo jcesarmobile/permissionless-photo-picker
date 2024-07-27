@@ -1,6 +1,6 @@
 {
   "name": "@jcesarmobile/permissionless-photo-picker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cordova plugin for picking pictures from the gallery without requesting permissions",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
