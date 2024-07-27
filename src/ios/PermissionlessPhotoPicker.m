@@ -1,4 +1,3 @@
-#import "PermissionlessPhotoPicker.h"
 #import <Cordova/CDV.h>
 #import <Photos/Photos.h>
 #import <PhotosUI/PhotosUI.h>
